@@ -46,15 +46,19 @@
             "id": "d1dbcd03-8f16-40d3-b017-56a62b384cf0",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
+            "listItems": [
+                "\"This is the first text\"",
+                "\"This is the seccond text that comes\"",
+                "\"This is the tird text\""
+            ],
+            "multiselect": true,
             "rangeEnabled": false,
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "",
             "varName": "text",
-            "varType": 2
+            "varType": 1
         },
         {
             "id": "38777fcd-d7c1-4e16-838b-e4391af8690d",
@@ -69,6 +73,20 @@
             "value": "0",
             "varName": "name",
             "varType": 2
+        },
+        {
+            "id": "33d1f029-f472-423e-b150-0b643f6dc825",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "sortedText",
+            "varType": 3
         }
     ],
     "solid": false,

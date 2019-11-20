@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0c823a65-1598-4ed5-869d-e07bbc2fb695",
+            "Value": {
+                "id": "1ace27e9-006e-4739-9500-dad4b989853a",
+                "resourcePath": "scripts\\sWordTiping\\sWordTiping.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "18541c13-ce99-45ee-a55b-d7ac90f5c5eb",
             "Value": {
                 "id": "98a2c46f-d792-453e-b7c8-e263cd65e069",
@@ -232,7 +240,7 @@
         }
     ],
     "script_order": [
-        
+        "0c823a65-1598-4ed5-869d-e07bbc2fb695"
     ],
     "tutorial": ""
 }
