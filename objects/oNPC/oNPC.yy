@@ -58,7 +58,7 @@
             "resourceFilter": 1023,
             "value": "",
             "varName": "text",
-            "varType": 1
+            "varType": 2
         },
         {
             "id": "38777fcd-d7c1-4e16-838b-e4391af8690d",

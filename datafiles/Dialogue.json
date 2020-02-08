@@ -1,0 +1,24 @@
+{
+	"TestBoy1":
+	{
+		"0":[
+			"Hello there, this is the first sentince.",
+			"If you got this far, this means the second part works.",
+			"Nice, the third line is also working and you can use this for other characters and states."
+			]
+	},
+	"TestBoy2":
+	{
+		"0":[
+			"Test text from TestBoy2, and it seems to work"
+		]
+	},
+	"Damocles":
+	{
+		"0":[
+			"Hello there hero, my name is Damocles.",
+			"I need help with a small matter concerning a certain individual, and I am talking about that guy on the right.",
+			"There is something shifty avbout him, I can't put my finger on it. Can you check on him and see what he's hiding? I would pay you."
+		]
+	}
+}

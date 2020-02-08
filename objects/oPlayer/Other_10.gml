@@ -32,18 +32,23 @@ if(xDir != 0){
 	yDir = 0;	
 }
 
+//Colission with npc
 var inst = collision_circle(x, y, 20, oNPC, false, false,);
 if(instance_exists(inst)){
+	//initiate talking, get the name and instance of the NPC
 	if(keyboard_check_pressed(ord("E"))){
 		talking = true;	
 		dName = inst.name;
-		dTextInst = array_get(dialogue,inst.text);
-		dTextMaxLine = array_length_1d(dTextInst);
-		dTextCurLine = 0;
+		//get the dialogue of the specific instance of the NPC
+		dialogueMap = decodedText [? dName];
+		dialogueList = dialogueMap [? inst.text];
+		dListSize = ds_list_size(dialogueList);
+		//if it hasnt been sorted, we sort it
 		if(!inst.sortedText){
-			for(i = 0; i < dTextMaxLine; i++){
-				dText = dTextInst[i];
+			for(i = 0; i <= dListSize-1; i++){
+				dText = dialogueList [| i];
 				dTextLen = string_length(dText);
+				//check for triple line length
 				if(dTextLen > 2 * maxWLen){
 					var curPos = maxWLen*2;
 					while(true){
@@ -64,6 +69,7 @@ if(instance_exists(inst)){
 						}
 					}
 					dTextLen += 2;
+					//check for double line length
 				}else if(dTextLen > maxWLen){
 					var curPos = maxWLen;
 					while(true){
@@ -76,12 +82,12 @@ if(instance_exists(inst)){
 					}
 					dTextLen ++;
 				}
-				dTextInst[i] = dText;
+				dialogueList [| i] = dText;
 			}
-			dialogue[inst.text] = dTextInst;
 			inst.sortedText = true;
 		}
-		dText = dTextInst[dTextCurLine];
+		dText = dialogueList [| 0];
+		dTextCurLine = 0;
 		dTextLen = string_length(dText);
 		global.currentPState = playerStates.talking;
 	}
@@ -90,5 +96,6 @@ if(instance_exists(inst)){
 	dText = "";
 }
 
+//move the player
 x += xDir * moveSpeed;
 y += yDir * moveSpeed;

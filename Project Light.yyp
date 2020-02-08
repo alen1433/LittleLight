@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "15e6711a-aa89-460a-b261-93336628bb65",
+            "Value": {
+                "id": "80f2fada-9286-4eb0-9a85-3a4a928f4418",
+                "resourcePath": "datafiles_yy\\Dialogue.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "18541c13-ce99-45ee-a55b-d7ac90f5c5eb",
             "Value": {
                 "id": "98a2c46f-d792-453e-b7c8-e263cd65e069",
